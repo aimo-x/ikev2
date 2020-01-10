@@ -27,7 +27,7 @@
 # In normal cases, you will only need to pass the HOST of your server.
 [ "no${HOST}" = "no" ] && echo "\$HOST environment variable required." && exit 1
 
-: ${PROFILE_NAME="My IKEv2 VPN Profile"}
+: ${PROFILE_NAME="vpn-jp"}
 : ${PROFILE_IDENTIFIER=$(echo -n "${HOST}." | tac -s. | sed 's/\.$//g')}
 : ${PROFILE_UUID=$(hostname)}
 
